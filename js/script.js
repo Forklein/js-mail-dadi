@@ -9,15 +9,21 @@ stampa un messaggio appropriato sull’esito del controllo.
 
 var listaccess = ['forklein@gmail.com', 'ciccio@gmail.com', 'pippo@gmail.com', 'marcolanci@gmail.com'];
 var mailuser = prompt('Inserisci la tua email: ');
+var validmail = 'La tua mail può accedere!';
+var invalidmail = 'La tua mail non può accedere!';
 
-var canaccess = true;
 
 
-
-if(listaccess.length - 1 !== mailuser){
-    console.log('La tua mail può accedere');
+if(listaccess[0] == mailuser){
+    console.log(validmail);
+}else if(listaccess[1] == mailuser){
+    console.log(validmail);
+}else if(listaccess[2] == mailuser){
+    console.log(validmail);
+}else if(listaccess[3] == mailuser){
+    console.log(validmail);
 }else{
-    console.log('non puoi accedere');
+    console.log(invalidmail);
 }
 
 
