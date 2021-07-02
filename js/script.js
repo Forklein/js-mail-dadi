@@ -35,9 +35,6 @@ if(success){
 }
  
 
-
-
-
 /*
 Gioco dei dadi
 Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
@@ -58,14 +55,14 @@ var player2text = document.getElementById('player2');
 
 if(player1 > player2){
     winnertext.innerHTML = 'Ha vinto il ' + winner[0];
-    player1text.innerHTML = 'Il Giocatore 1 ha totalizzato ' + player1 + 'punti';
-    player2text.innerHTML = 'Il Giocatore 2 ha totalizzato ' + player2 + 'punti';
+    player1text.innerHTML = 'Il Giocatore 1 ha totalizzato ' + player1 + ' punti';
+    player2text.innerHTML = 'Il Giocatore 2 ha totalizzato ' + player2 + ' punti';
 }else if(player1 < player2){
     winnertext.innerHTML = 'Ha vinto il ' + winner[1];
-    player1text.innerHTML = 'Il Giocatore 1 ha totalizzato ' + player1 + 'punti';
-    player2text.innerHTML = 'Il Giocatore 2 ha totalizzato ' + player2 + 'punti';
+    player1text.innerHTML = 'Il Giocatore 1 ha totalizzato ' + player1 + ' punti';
+    player2text.innerHTML = 'Il Giocatore 2 ha totalizzato ' + player2 + ' punti';
 }else{
     winnertext.innerHTML = 'Pareggio!'
-    player1text.innerHTML = 'Il Giocatore 1 ha totalizzato ' + player1 + 'punti';
-    player2text.innerHTML = 'Il Giocatore 2 ha totalizzato ' + player2 + 'punti';
+    player1text.innerHTML = 'Il Giocatore 1 ha totalizzato ' + player1 + ' punti';
+    player2text.innerHTML = 'Il Giocatore 2 ha totalizzato ' + player2 + ' punti';
 }
