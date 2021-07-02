@@ -7,20 +7,33 @@ controlla che sia nella lista di chi può accedere,
 stampa un messaggio appropriato sull’esito del controllo.
 */
 
+
+/* Create variable */
 var listaccess = ['forklein@gmail.com', 'ciccio@gmail.com', 'pippo@gmail.com', 'marcolanci@gmail.com'];
 var mailuser = prompt('Inserisci la tua email: ');
-
 var validmail = 'La tua mail può accedere!';
 var invalidmail = 'La tua mail non può accedere!';
 
+/* Create variable */
+var success = false;
 
-for(var i = 0; i < listaccess.length; i++){
+/* Create for cicle */
+for(var i = 0; i <= listaccess.length - 1; i++){
     if(listaccess[i] === mailuser){
+        success = true;
         console.log(validmail);
     }else{
         console.log(invalidmail);
     }
 }
+
+/* InnerHTML if success = True */
+if(success){
+    document.getElementById('success').innerHTML = validmail;
+}else{
+    document.getElementById('success').innerHTML = invalidmail;
+}
+ 
 
 
 
