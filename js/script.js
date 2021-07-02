@@ -44,4 +44,28 @@ Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 Stabilire il vincitore, in base a chi fa il punteggio più alto e stampare il risultato.
 */
 
+/* Create variable */
+var player1 = Math.floor(Math.random() * 6 + 1);
+var player2 = Math.floor(Math.random() * 6 + 1);
+var winner = ['Giocatore 1', 'Giocatore 2'];
 
+/* Create variable for html */
+var winnertext = document.getElementById('winner');
+var player1text = document.getElementById('player1');
+var player2text = document.getElementById('player2');
+
+/* Condition */
+
+if(player1 > player2){
+    winnertext.innerHTML = 'Ha vinto il ' + winner[0];
+    player1text.innerHTML = 'Il Giocatore 1 ha totalizzato ' + player1 + 'punti';
+    player2text.innerHTML = 'Il Giocatore 2 ha totalizzato ' + player2 + 'punti';
+}else if(player1 < player2){
+    winnertext.innerHTML = 'Ha vinto il ' + winner[1];
+    player1text.innerHTML = 'Il Giocatore 1 ha totalizzato ' + player1 + 'punti';
+    player2text.innerHTML = 'Il Giocatore 2 ha totalizzato ' + player2 + 'punti';
+}else{
+    winnertext.innerHTML = 'Pareggio!'
+    player1text.innerHTML = 'Il Giocatore 1 ha totalizzato ' + player1 + 'punti';
+    player2text.innerHTML = 'Il Giocatore 2 ha totalizzato ' + player2 + 'punti';
+}
