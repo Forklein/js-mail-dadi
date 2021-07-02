@@ -8,22 +8,19 @@ stampa un messaggio appropriato sull’esito del controllo.
 */
 
 var listaccess = ['forklein@gmail.com', 'ciccio@gmail.com', 'pippo@gmail.com', 'marcolanci@gmail.com'];
-var mailuser = prompt('Inserisci la tua email: ');
+// var mailuser = prompt('Inserisci la tua email: ');
+
 var validmail = 'La tua mail può accedere!';
 var invalidmail = 'La tua mail non può accedere!';
 
 
-
-if(listaccess[0] == mailuser){
-    console.log(validmail);
-}else if(listaccess[1] == mailuser){
-    console.log(validmail);
-}else if(listaccess[2] == mailuser){
-    console.log(validmail);
-}else if(listaccess[3] == mailuser){
-    console.log(validmail);
-}else{
-    console.log(invalidmail);
+for(var i = 0; i < listaccess.length -1; i++){
+    console.log(listaccess[i]);
+    if(listaccess[i] != mailuser){
+        console.log(invalidmail);
+    }else{
+        console.log(validmail);
+    }
 }
 
 
