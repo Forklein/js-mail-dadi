@@ -20,6 +20,7 @@ var success = false;
 /* Create for cicle */
 for(var i = 0; i <= listaccess.length - 1; i++){
     if(listaccess[i] === mailuser){
+        var position = i;
         success = true;
         console.log(validmail);
     }else{
@@ -30,6 +31,7 @@ for(var i = 0; i <= listaccess.length - 1; i++){
 /* InnerHTML if success = True */
 if(success){
     document.getElementById('success').innerHTML = validmail;
+    console.log(position);
 }else{
     document.getElementById('success').innerHTML = invalidmail;
 }
